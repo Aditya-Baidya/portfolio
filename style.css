@@ -1,110 +1,62 @@
-body{
-    
-}
-h2{
-    text-decoration: underline;
-    background-color: rgba(2, 2, 2, 0.066);
-    display:inline-block
-}
-.Career{
-    color: #FCFE34;
-}
-.Education{
-  font-family: "Spline Sans Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  background-color: rgb(154, 154, 154);
-  color: white;
-}
-.Common{
-    font-family: "Spline Sans Mono", monospace;
-    color:rgb(255, 148, 34);
-    background-color: rgb(78, 76, 76);
-}
-.degree{
-    font-style: italic;
-}
-.Work{
-    font-family: "Spline Sans Mono", monospace;
-    color: rgba(0, 0, 0, 0.831);
-    background-color: rgb(154, 154, 154);
-}
-.design1{
-  font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-
-
-
-}
-.design2{
-    font-family: "Italianno", cursive;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'spline sans mono', monospace;
 }
 
-.design3{
-   font-family: "Italianno", cursive;
-   font-size: 16px;
-   display: flex; 
-   justify-content: space-between;
-
+nav{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255,0.2);
+    top:0;
+    left: 0;
+    z-index: 1;
 }
 
-h1{
-    text-decoration: underline;
-    color: rgb(15, 110, 134);
+nav ul{
+    list-style-type: none;
 }
 
-.container{
-    width: fit-content;
-    border: 2px solid red;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 12px 12px 15px red;
+nav ul li{
+    display: inline-block;
+    margin: 1rem;
+    margin-right: 4rem;
 }
 
-.flex-container{
-    height: 200px;
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover{
+    color: rgb(111, 189, 137);
+}
+
+nav ul li a.active{
+    color: rgb(111, 189, 137);
+}
+
+.hero{
+    height: 100vh;
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0;
+    left: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.flex-container div{
-    padding: 10px;
-}
-
-
-.flex-container2{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-}
-
-.flex-container2 div{
-    border: 2px solid;
-    padding: 10px;
-    width: 100px;
-}
-
-#i1{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+}
 
+.hero-content{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 
-@media screen and (max-width: 480px) {
-    .flex-container2{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container{
-        display: none;
-    }
+.education{
+    height: 50vh;
 }
