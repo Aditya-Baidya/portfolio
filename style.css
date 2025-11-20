@@ -55,6 +55,9 @@ nav ul li a.active{
     color: white;
     text-align: center;
 }
+.hero-content p{
+    font-size: 2rem; 
+}
 
 
 .education{
